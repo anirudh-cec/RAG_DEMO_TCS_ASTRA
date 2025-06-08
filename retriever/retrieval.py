@@ -47,9 +47,9 @@ class Retriever:
         vstore = AstraDBVectorStore(
         embedding=embeddings,
         collection_name="tcsrag",
-        api_endpoint="https://94abba2b-9f1f-4307-8065-5d4b997902b4-us-east-2.apps.astra.datastax.com",
-        token="AstraCS:hLJDkASyuwZFdHKQqbLPRjtj:0d57a09803da50dcbda6623dc8f72e24ff2a50d0c86ae31f240e22e7d0d9e8eb",
-        namespace="default_keyspace"
+        api_endpoint=self.astra_db_api_endpoint,
+        token=self.astra_db_application_token,
+        namespace=self.astra_db_keyspace,
         
         )
             
