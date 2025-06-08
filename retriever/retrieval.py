@@ -44,14 +44,14 @@ class Retriever:
         #                 namespace=self.astra_db_keyspace
         
         # )
-        vstore = AstraDBVectorStore(
-        embedding=embeddings,
-        collection_name="tcsrag",
-        api_endpoint=self.astra_db_api_endpoint,
-        token=self.astra_db_application_token,
-        namespace=self.astra_db_keyspace,
-        
-        )
+            vstore = AstraDBVectorStore(
+            embedding=embeddings,
+            collection_name="tcsrag",
+            api_endpoint=self.astra_db_api_endpoint,
+            token=self.astra_db_application_token,
+            namespace=self.astra_db_keyspace,
+            
+            )
             
 
         if not self.retriever:
