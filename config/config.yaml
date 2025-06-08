@@ -1,14 +1,14 @@
 astra_db:
-  collection_name: "tcsragpoc"
+  collection_name: "tcsrag"
 
 
 embedding_model:
-  provider: "google"
-  model_name: "models/text-embedding-004"
+  provider: "openai"
+  model_name: "text-embedding-3-small"
 
 retriever:
-  top_k: 10
+  top_k: 2
 
 llm:
-  provider: "google"
-  model_name: "deepseek-r1-distill-llama-70b"
+  provider: "openai"
+  model_name: "gpt-4o"
